@@ -1,0 +1,79 @@
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 10% 1fr 10%;
+    height: 80vh;
+    text-align: center;
+}
+
+.header {
+    grid-column: 1/4;
+}
+
+.main {
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #FFF8E3;
+}
+
+.aside {
+    grid-template-columns: 1fr;
+    background-color: #DDECCB;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column: 1/4;
+    justify-items: center;
+    text-align: center;
+}
+
+
+.footer {
+    display: grid;
+    height: 10vh;
+    width: 50%;
+    background-color: #FAFAFA;
+    justify-content: center;
+    align-content: center;
+}
+
+.container3 {
+    display: grid;
+    background-color: #FEEAB9;
+}
+
+.items {
+    display: grid;
+    grid-template-areas: "a a b b b b"
+        "c c c c c c";
+    position: absolute;
+    gap: 50pt;
+    left: 80pt;
+    width: 60%;
+    top: 250px;
+    text-align: center;
+
+
+}
+
+.item1 {
+    grid-area: a;
+
+}
+
+.item2 {
+    grid-area: b;
+}
+
+.item3 {
+    grid-area: c;
+}
+
+.item1,
+.item2,
+.item3 {
+    background-color: #FEEAB9;
+    height: 50pt;
+
+}
